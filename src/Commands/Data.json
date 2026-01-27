@@ -1,0 +1,11 @@
+{
+  "Project": {
+    "Room": {
+      "name": "Obytná sekce",
+      "description": "Jsi v obytné sekci. Místnost je větší a útulná. Kolem tebe se nachází několik spacích kryobuňek. Každá má vedle sebe malí noční stolek s židlí.",
+      "around":["Řídicí můstek","Komunikační uzel"],
+      "Persons": null,
+      "items":["Klíč od obytné místnosti"]
+    }
+  }
+}
