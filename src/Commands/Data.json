@@ -1,11 +1,89 @@
 {
   "Project": {
-    "Room": {
+    "Room": [{
       "name": "Obytná sekce",
       "description": "Jsi v obytné sekci. Místnost je větší a útulná. Kolem tebe se nachází několik spacích kryobuňek. Každá má vedle sebe malí noční stolek s židlí.",
       "around":["Řídicí můstek","Komunikační uzel"],
       "Persons": null,
       "items":["Klíč od obytné místnosti"]
-    }
+    },
+    {
+      "name": "Řídicí můstek",
+      "description": "Nacházíš se na řídicím můstku. Uprostřed místnosti je vyvýšený velín kolem něj počítače pro navigaci, poškození/opravy a několik dalších.",
+      "around": ["Obytná sekce","Sklad a Údržba","Laboratoře"],
+      "Persons": null,
+      "items": null
+    },
+    {
+      "name": "Laboratoře",
+      "description": "Místnost Laboratoří je větší čistější a pořádně vybílená. nachází se zde spoustu přístrojů kterým jsi sama nikdy moc nerozuměla. Před vchodem do jádra pár prázdných věšáků na oblek. ",
+      "around": ["Řídicí můstek","Energetické jádro"],
+      "Persons": "android Lyra",
+      "items": null
+    },
+    {
+      "name": "Energetické jádro",
+      "description": "Energetické jádro je vysoce kontaminovaná místnost. Oblek je nutnost. Uprostřed místnosti je podivný velký box, ze stran jsou nastrkané energetické články.",
+      "around": "Laboratoře",
+      "Persons": null,
+      "items": "energetický článek"
+  },
+    {
+      "name": "Sklad a údržba",
+      "description": "Vstoupil jsi do velké místnosti plné regálů. Nachází se zde několik přenosných vozíků, velké konteinery a spousta dřevěných beden. Také jsi zde zahlédl skladového robota AX-3",
+      "around": [
+        "Řídicí můstek",
+        "Komunikační uzel",
+        "Hangár"
+      ],
+      "Persons": "AX-3",
+      "items": null
+    },
+    {
+      "name": "Komunikační uzel",
+      "description": "Menší místnost plná různých serverů a přístrojů navazujících spojení s okolím. Vypadá to že se zde velmi vyplatí podívat se po místnosti",
+      "around": ["Obytná sekce","Strojovna","Sklad a údržba"],
+      "Persons": null,
+      "items": "1/2 karty do hangaru"
+    },
+     {
+      "name": "Hangár",
+      "description": "Hangár je místnost velmi velká je zde několik rozbitých nouzových modulů a jinak nic moc zajímavého",
+      "around": "Sklad a údržba",
+      "Persons": null,
+      "items": null
+    }],
+    "Item": [{
+      "name": "Klíč od obytné místnosti",
+      "descriptin":"pomocí tohoto klíče otevřeš dveře od obytné místnosti"
+    },
+      {
+        "name": "energetický článek",
+        "description": "Slouží jako pohon pro únikový modul"
+      },
+      {
+        "name": "1/2 karty do hangaru",
+        "description": "Polovina karty pro otevření hangáru"
+      },
+      {
+        "name": "2/2 karty do hangaru",
+        "description": "Polovina karty pro otevření hangáru",
+
+      },
+      {"name": "karta do hangaru",
+      "description": "máš složenou kartu od hangaru"},
+      {
+        "name": "ochranný oblek",
+        "description": "oblek který použiješ pouze 1x tak dej pozor na co"
+      },
+      {
+        "name": "klíčky od modulu",
+        "description": "můžeš nastartovat modul a uniknout"
+      },
+      {"name": "Datové nosiče",
+      "description": "nosiče s daty o lodi před rozpadem"}
+    ]
+
+
   }
 }
