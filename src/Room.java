@@ -4,7 +4,7 @@ public class Room {
     private String name;
     private String description;
     ArrayList<Room>around=new ArrayList<>();
-    private Npc Persons;
+    private robotAX Persons;
     ArrayList<Item>items;
 
     public void describe(){}
